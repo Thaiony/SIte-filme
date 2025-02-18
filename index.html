@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming de Vídeo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            text-align: center;
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Link para imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            display: block;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .movie {
+            margin: 20px 0;
+            border: 2px solid #444;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .movie:hover {
+            transform: scale(1.05);
+            border-color: #ffcc00;
+        }
+        .movie h2 {
+            margin: 10px 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Streaming de Vídeo</h1>
+    <div class="container">
+        <div class="movie">
+            <img src="https://via.placeholder.com/300x450" alt="Aventura nas Estrelas">
+            <h2>Aventura nas Estrelas</h2>
+            <p>Uma jornada épica de exploração espacial onde a tripulação descobre planetas inexplorados e enfrenta desafios inimagináveis.</p>
+        </div>
+        <div class="movie">
+            <img src="https://via.placeholder.com/300x450" alt="O Segredo do Oceano">
+            <h2>O Segredo do Oceano</h2>
+            <p>Uma história de mistério e aventura subaquática onde mergulhadores encontram um segredo antigo nas profundezas do mar.</p>
+        </div>
+        <div class="movie">
+            <img src="https://via.placeholder.com/300x450" alt="O Mestre do Tempo">
+            <h2>O Mestre do Tempo</h2>
+            <p>Um cientista descobre a habilidade de viajar no tempo e deve lidar com as consequências de alterar o curso da história.</p>
+        </div>
+    </div>
+</body>
+</html>
