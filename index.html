@@ -3,28 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streaming de Vídeo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Filmes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .movie {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .movie:last-child {
+            border-bottom: none;
+        }
+        .movie img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .movie h3 {
+            text-align: center;
+            color: #333;
+            margin: 0;
+        }
+        .movie p {
+            text-align: center;
+            color: #666;
+            margin: 10px 0;
+        }
+        .movie button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        .movie button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Streaming de Vídeo</h1>
     <div class="container">
+        <h1>Catálogo de Filmes</h1>
         <div class="movie">
-            <img src="https://via.placeholder.com/300x450" alt="Aventura nas Estrelas">
-            <h2>Aventura nas Estrelas</h2>
-            <p>Uma jornada épica de exploração espacial onde a tripulação descobre planetas inexplorados e enfrenta desafios inimagináveis.</p>
+            <img src="https://via.placeholder.com/300x450" alt="Filme A">
+            <h3>Filme A</h3>
+            <p>Uma breve descrição do Filme A. Este filme é uma aventura épica que leva os espectadores a uma jornada inesquecível.</p>
+            <button onclick="alert('Assistindo Filme A')">Assistir</button>
+            <button onclick="alert('Saiba mais sobre o Filme A')">Saber Mais</button>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/300x450" alt="O Segredo do Oceano">
-            <h2>O Segredo do Oceano</h2>
-            <p>Uma história de mistério e aventura subaquática onde mergulhadores encontram um segredo antigo nas profundezas do mar.</p>
+            <img src="https://via.placeholder.com/300x450" alt="Filme B">
+            <h3>Filme B</h3>
+            <p>Uma breve descrição do Filme B. Uma comédia romântica que explora os altos e baixos de um relacionamento moderno.</p>
+            <button onclick="alert('Assistindo Filme B')">Assistir</button>
+            <button onclick="alert('Saiba mais sobre o Filme B')">Saber Mais</button>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/300x450" alt="O Mestre do Tempo">
-            <h2>O Mestre do Tempo</h2>
-            <p>Um cientista descobre a habilidade de viajar no tempo e deve lidar com as consequências de alterar o curso da história.</p>
+            <img src="https://via.placeholder.com/300x450" alt="Filme C">
+            <h3>Filme C</h3>
+            <p>Uma breve descrição do Filme C. Um thriller psicológico que mantém os espectadores na ponta da cadeira do início ao fim.</p>
+            <button onclick="alert('Assistindo Filme C')">Assistir</button>
+            <button onclick="alert('Saiba mais sobre o Filme C')">Saber Mais</button>
         </div>
     </div>
-    <script src="scripts.js"></script>
 </body>
 </html>
