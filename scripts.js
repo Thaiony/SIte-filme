@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     movies.forEach(movie => {
         movie.addEventListener('click', function() {
-            alert(`Você clicou em: ${movie.querySelector('h2').innerText}`);
+            alert(`Você clicou em---: ${movie.querySelector('h2').innerText}`);
         });
     });
 });
