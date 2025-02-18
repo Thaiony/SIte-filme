@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    background-image: url('https://via.placeholder.com/1920x1080'); /* Link para imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.movie {
+    margin: 20px 0;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    border-color: #ffcc00;
+}
+
+.movie h2 {
+    margin: 10px 0 5px;
+}
