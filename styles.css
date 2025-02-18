@@ -3,7 +3,7 @@ body {
     background-color: #1c1c1c;
     color: #fff;
     text-align: center;
-    background-image: url('https://via.placeholder.com/1920x1080'); /* Link para imagem de fundo */
+    background-image: url('https://via.placeholder.com/1920x1080'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -12,16 +12,24 @@ body {
 }
 
 .container {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
 }
 
 .movie {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
     margin: 20px 0;
     border: 2px solid #444;
-    border-radius: 10px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     transition: transform 0.3s, border-color 0.3s;
@@ -39,4 +47,23 @@ body {
 
 .movie h2 {
     margin: 10px 0 5px;
+}
+
+.background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /
+    z-index: 1;
+}
+
+.movie-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
