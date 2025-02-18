@@ -14,32 +14,49 @@
         <aside class="sidebar">
             <nav>
                 <ul>
-                    <li><a href="#aventura">Aventura</a></li>
-                    <li><a href="#misterio">Mistério</a></li>
-                    <li><a href="#ficcao">Ficção Científica</a></li>
+                    <li><button onclick="filterMovies('aventura')">Aventura</button></li>
+                    <li><button onclick="filterMovies('misterio')">Mistério</button></li>
+                    <li><button onclick="filterMovies('ficcao')">Ficção Científica</button></li>
+                    <li><button onclick="filterMovies('drama')">Drama</button></li>
+                    <li><button onclick="filterMovies('comedia')">Comédia</button></li>
+                    <li><button onclick="filterMovies('todos')">Todos</button></li>
                 </ul>
             </nav>
         </aside>
         <div class="container">
-            <div class="movie background-image" id="aventura" style="background-image: url('imagens/capa aventura.png');">
+            <div class="movie background-image aventura" id="aventura" style="background-image: url('imagens/capa aventura.png');">
                 <div class="movie-content">
                     <h2>Aventura nas Estrelas</h2>
                     <p>Uma jornada épica de exploração espacial onde a tripulação descobre planetas inexplorados e enfrenta desafios inimagináveis.</p>
                     <button onclick="saibaMais('Aventura nas Estrelas')">Saiba Mais</button>
                 </div>
             </div>
-            <div class="movie background-image" id="misterio" style="background-image: url('imagens/capa oceano.png');">
+            <div class="movie background-image misterio" id="misterio" style="background-image: url('imagens/capa oceano.png');">
                 <div class="movie-content">
                     <h2>O Segredo do Oceano</h2>
                     <p>Uma história de mistério e aventura subaquática onde mergulhadores encontram um segredo antigo nas profundezas do mar.</p>
                     <button onclick="saibaMais('O Segredo do Oceano')">Saiba Mais</button>
                 </div>
             </div>
-            <div class="movie background-image" id="ficcao" style="background-image: url('imagens/capa tempo.png');">
+            <div class="movie background-image ficcao" id="ficcao" style="background-image: url('imagens/capa tempo.png');">
                 <div class="movie-content">
                     <h2>O Mestre do Tempo</h2>
                     <p>Um cientista descobre a habilidade de viajar no tempo e deve lidar com as consequências de alterar o curso da história.</p>
                     <button onclick="saibaMais('O Mestre do Tempo')">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="movie background-image drama" id="drama" style="background-image: url('imagens/capa drama.png');">
+                <div class="movie-content">
+                    <h2>Drama Intenso</h2>
+                    <p>Uma história emocionante que explora os desafios e triunfos da vida cotidiana.</p>
+                    <button onclick="saibaMais('Drama Intenso')">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="movie background-image comedia" id="comedia" style="background-image: url('imagens/capa comedia.png');">
+                <div class="movie-content">
+                    <h2>Risos Garantidos</h2>
+                    <p>Uma comédia hilária que promete fazer todos rirem do começo ao fim.</p>
+                    <button onclick="saibaMais('Risos Garantidos')">Saiba Mais</button>
                 </div>
             </div>
         </div>
