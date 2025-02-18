@@ -6,57 +6,87 @@
     <title>Catálogo de Filmes</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
         .container {
             width: 80%;
             margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
         }
         .movie {
-            background-color: #fff;
-            margin: 10px;
-            padding: 10px;
-            width: 30%;
-            box-sizing: border-box;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .movie:last-child {
+            border-bottom: none;
         }
         .movie img {
             width: 100%;
-            border-radius: 5px;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
         .movie h3 {
             text-align: center;
             color: #333;
+            margin: 0;
         }
         .movie p {
-            text-align: justify;
+            text-align: center;
             color: #666;
+            margin: 10px 0;
+        }
+        .movie button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .movie button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <h1>Catálogo de Filmes</h1>
         <div class="movie">
             <img src="https://via.placeholder.com/300x450" alt="Filme A">
             <h3>Filme A</h3>
             <p>Uma breve descrição do Filme A. Este filme é uma aventura épica que leva os espectadores a uma jornada inesquecível.</p>
+            <button onclick="alert('Assistindo Filme A')">Assistir</button>
+            <button onclick="alert('Saiba mais sobre o Filme A')">Saber Mais</button>
         </div>
         <div class="movie">
             <img src="https://via.placeholder.com/300x450" alt="Filme B">
             <h3>Filme B</h3>
             <p>Uma breve descrição do Filme B. Uma comédia romântica que explora os altos e baixos de um relacionamento moderno.</p>
+            <button onclick="alert('Assistindo Filme B')">Assistir</button>
+            <button onclick="alert('Saiba mais sobre o Filme B')">Saber Mais</button>
         </div>
         <div class="movie">
             <img src="https://via.placeholder.com/300x450" alt="Filme C">
             <h3>Filme C</h3>
             <p>Uma breve descrição do Filme C. Um thriller psicológico que mantém os espectadores na ponta da cadeira do início ao fim.</p>
+            <button onclick="alert('Assistindo Filme C')">Assistir</button>
+            <button onclick="alert('Saiba mais sobre o Filme C')">Saber Mais</button>
         </div>
     </div>
 </body>
